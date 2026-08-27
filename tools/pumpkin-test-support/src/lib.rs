@@ -1,4 +1,4 @@
-#![allow(clippy::panic, clippy::unwrap_used, clippy::expect_used)]
+#![allow(clippy::panic, clippy::unwrap_used, clippy::expect_used, dead_code)]
 
 #[cfg(target_os = "android")]
 const TEST_WORK_DIR: &str = "/data/local/tmp/pumpkin_test";
