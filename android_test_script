@@ -1,4 +1,4 @@
-zip -r project.zip . -x "target/*" -x ".git/*"
+zip -q -r project.zip . -x "target/*" -x ".git/*"
 # silly way to pack test data files
 adb push project.zip /data/local/tmp/
 adb shell "unzip -o /data/local/tmp/project.zip -d /data/local/tmp/pumpkin_test"
