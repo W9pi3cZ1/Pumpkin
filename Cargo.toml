@@ -16,6 +16,7 @@ members = [
     "crates/pumpkin-world",
     "tools/pumpkin-codegen",
     "tools/pumpkin-fuzzer",
+    "tools/pumpkin-test-support",
 ]
 
 # [workspace.lints.rust]
@@ -121,7 +122,6 @@ inherits = "release"
 debug = true
 strip = false
 
-
 [workspace.dependencies]
 tokio = { version = "1.53", default-features = false }
 syn = { version = "3.0", default-features = false, features = ["full", "parsing", "printing", "proc-macro", "clone-impls", "derive"] }
@@ -183,6 +183,7 @@ pumpkin-plugin-utils = { path = "crates/pumpkin-plugin-utils", default-features 
 pumpkin-protocol = { path = "crates/pumpkin-protocol", default-features = false }
 pumpkin-util = { path = "crates/pumpkin-util", default-features = false }
 pumpkin-world = { path = "crates/pumpkin-world", default-features = false }
+pumpkin-test-support = { path = "tools/pumpkin-test-support", default-features = false }
 quote = { version = "1.0", default-features = false, features = ["proc-macro"] }
 rand = { version = "0.10.2", default-features = false, features = ["std", "std_rng", "thread_rng"] }
 rsa = { version = "=0.10.0-rc.18", default-features = false, features = ["std", "encoding"] }

@@ -126,6 +126,7 @@ indexmap.workspace = true
 
 [dev-dependencies]
 tempfile.workspace = true
+pumpkin-test-support.workspace = true
 
 [features]
 console-subscriber = ["dep:console-subscriber"]
